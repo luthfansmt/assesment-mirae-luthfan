@@ -1,6 +1,4 @@
 import { Box, Card, Grid, Typography } from "@mui/material";
-import data from "../data/data.json";
-import { StatCard } from "../components/StatCard";
 import { ChartCard } from "../components/ChartCard";
 
 const dummyData = [
@@ -30,12 +28,6 @@ const styles = {
   };
 
 
-            {/* <StatCard title="Clients" value="371,602" />
-            <StatCard title="Revenue" value="6,187" />
-            <StatCard title="Transactions" value="562" />
-            <StatCard title="Growth" value="5.89%" />
-            <StatCard title="Branches" value="6" />
-            <StatCard title="Products" value="24" /> */}
 export default function Dashboard() {
   return (
     <>
