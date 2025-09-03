@@ -1,0 +1,21 @@
+{
+    "summary": {
+      "clients": 371602,
+      "aum": 6187,
+      "loan": 562,
+      "growth": "5.89%",
+      "branches": 6,
+      "staff": 24
+    },
+    "clients": [
+      { "month": "Jan", "value": 200 },
+      { "month": "Feb", "value": 220 },
+      { "month": "Mar", "value": 250 }
+    ],
+    "loans": [
+      { "month": "Jan", "value": 100 },
+      { "month": "Feb", "value": 120 },
+      { "month": "Mar", "value": 140 }
+    ]
+  }
+  
