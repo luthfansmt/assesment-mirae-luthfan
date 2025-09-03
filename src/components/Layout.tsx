@@ -1,5 +1,6 @@
 import { AppBar, Toolbar, Typography, Drawer, List, ListItem, ListItemText, Box, Button } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 const menuItems = [
   { label: "Overview", path: "/" },
@@ -16,16 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   };
   return (
     <Box sx={{ display: "flex" }}>
-      <Drawer variant="permanent" sx={{ width: 100 }}>
-        <Toolbar />
-        <List>
-          {menuItems.map((item) => (
-            <ListItem key={item.path} component={Link} to={item.path}>
-              <ListItemText primary={item.label} />
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
+      <Sidebar />
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
