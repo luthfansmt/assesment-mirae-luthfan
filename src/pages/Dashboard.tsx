@@ -1,16 +1,6 @@
 import { Box, Card, Grid, Typography } from "@mui/material";
 import { ChartCard } from "../components/ChartCard";
-
-const dummyData = [
-    { name: "Jan", value: 100 },
-    { name: "Feb", value: 120 },
-    { name: "Mar", value: 150 },
-    { name: "Apr", value: 130 },
-    { name: "mei", value: 100 },
-    { name: "jun", value: 120 },
-    { name: "jul", value: 150 },
-    { name: "aug", value: 130 },
-  ];
+import data from "../data/data.json";
 
 const styles = {
     card: {
@@ -39,11 +29,11 @@ export default function Dashboard() {
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
                         <Typography>Clients</Typography>
-                        <Typography>371,602</Typography>
+                        <Typography>{data?.summary.clients}</Typography>
                     </Box>
                     <Box>
                         <Typography>Revenue</Typography>
-                        <Typography>371,602</Typography>
+                        <Typography>{data?.summary.revenue}</Typography>
                     </Box>
                 </Card>
             </Grid>
@@ -51,15 +41,15 @@ export default function Dashboard() {
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
                         <Typography>Clients</Typography>
-                        <Typography>371,602</Typography>
+                        <Typography>{data?.summary.clients}</Typography>
                     </Box>
                     <Box>
                         <Typography>Revenue</Typography>
-                        <Typography>371,602</Typography>
+                        <Typography>{data?.summary.revenue}</Typography>
                     </Box>
                     <Box>
                         <Typography>Growth</Typography>
-                        <Typography>5,8%</Typography>
+                        <Typography>{data?.summary.growth}</Typography>
                     </Box>
                 </Card>
             </Grid>
@@ -67,11 +57,11 @@ export default function Dashboard() {
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
                         <Typography>Branches</Typography>
-                        <Typography>50</Typography>
+                        <Typography>{data?.summary.branches}</Typography>
                     </Box>
                     <Box>
-                        <Typography>Products</Typography>
-                        <Typography>24</Typography>
+                        <Typography>Staff</Typography>
+                        <Typography>{data.summary.staff}</Typography>
                     </Box>
                 </Card>
             </Grid>
@@ -79,22 +69,22 @@ export default function Dashboard() {
         <Grid container spacing={2}>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="No. of Clients" data={dummyData} type="bar" />
+                    <ChartCard title="No. of Clients" data={data?.clients} type="bar" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Loan" data={dummyData} type="bar" />
+                    <ChartCard title="Loan" data={data.loans} type="bar" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Client Asset AUM" data={dummyData} type="line" />
+                    <ChartCard title="Client Asset AUM" data={data.clientAssetsAum} type="line" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Trading Value" data={dummyData} type="bar" />
+                    <ChartCard title="Trading Value" data={data.tradingValue} type="bar" />
                 </Card>
             </Grid>
         </Grid>

@@ -5,17 +5,64 @@
       "loan": 562,
       "growth": "5.89%",
       "branches": 6,
-      "staff": 24
+      "staff": 24,
+      "revenue": 1204
     },
     "clients": [
-      { "month": "Jan", "value": 200 },
-      { "month": "Feb", "value": 220 },
-      { "month": "Mar", "value": 250 }
+      { "name": "Jan", "value": 210 },
+      { "name": "Feb", "value": 230 },
+      { "name": "Mar", "value": 260 },
+      { "name": "Apr", "value": 280 },
+      { "name": "May", "value": 310 },
+      { "name": "Jun", "value": 330 },
+      { "name": "Jul", "value": 360 },
+      { "name": "Aug", "value": 380 },
+      { "name": "Sep", "value": 410 },
+      { "name": "Oct", "value": 430 },
+      { "name": "Nov", "value": 460 },
+      { "name": "Dec", "value": 490 }
     ],
     "loans": [
-      { "month": "Jan", "value": 100 },
-      { "month": "Feb", "value": 120 },
-      { "month": "Mar", "value": 140 }
+      { "name": "Jan", "value": 742 },
+      { "name": "Feb", "value": 315 },
+      { "name": "Mar", "value": 865 },
+      { "name": "Apr", "value": 498 },
+      { "name": "May", "value": 672 },
+      { "name": "Jun", "value": 234 },
+      { "name": "Jul", "value": 811 },
+      { "name": "Aug", "value": 453 },
+      { "name": "Sep", "value": 789 },
+      { "name": "Oct", "value": 612 },
+      { "name": "Nov", "value": 527 },
+      { "name": "Dec", "value": 398 }
+    ],
+    "clientAssetsAum": [
+      { "name": "Jan", "value": 845 },
+      { "name": "Feb", "value": 412 },
+      { "name": "Mar", "value": 678 },
+      { "name": "Apr", "value": 523 },
+      { "name": "May", "value": 799 },
+      { "name": "Jun", "value": 356 },
+      { "name": "Jul", "value": 482 },
+      { "name": "Aug", "value": 764 },
+      { "name": "Sep", "value": 691 },
+      { "name": "Oct", "value": 537 },
+      { "name": "Nov", "value": 812 },
+      { "name": "Dec", "value": 429 }
+    ],
+    "tradingValue": [
+      { "name": "Jan", "value": 623 },
+      { "name": "Feb", "value": 498 },
+      { "name": "Mar", "value": 712 },
+      { "name": "Apr", "value": 385 },
+      { "name": "May", "value": 841 },
+      { "name": "Jun", "value": 276 },
+      { "name": "Jul", "value": 659 },
+      { "name": "Aug", "value": 534 },
+      { "name": "Sep", "value": 798 },
+      { "name": "Oct", "value": 421 },
+      { "name": "Nov", "value": 689 },
+      { "name": "Dec", "value": 357 }
     ]
   }
   
