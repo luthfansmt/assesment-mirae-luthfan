@@ -1,12 +1,6 @@
-import { AppBar, Toolbar, Typography, Drawer, List, ListItem, ListItemText, Box, Button } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
-
-const menuItems = [
-  { label: "Overview", path: "/" },
-  { label: "Assets", path: "/assets" },
-  { label: "Clients", path: "/clients" }
-];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 
