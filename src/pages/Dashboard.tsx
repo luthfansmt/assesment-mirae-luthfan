@@ -74,12 +74,12 @@ export default function Dashboard() {
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Loan" data={data.loans} type="bar" />
+                    <ChartCard title="Loan" data={data.loans} type="stacked" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Client Asset AUM" data={data.clientAssetsAum} type="line" />
+                    <ChartCard title="Client Asset AUM" data={data.clientAssetsAum} type="bar" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
