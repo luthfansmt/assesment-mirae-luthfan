@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Button, Paper, TextField, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import LogoMirae from '../assets/logo.jpeg';
+import LogoMirae from "../../public/Logo.jpeg";
 
 export default function Login() {
   const [username, setUsername] = useState("");
