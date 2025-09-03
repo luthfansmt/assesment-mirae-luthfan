@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, Button, Paper, TextField, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import LogoMirae from '../assets/logo.jpeg';
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -22,9 +23,7 @@ export default function Login() {
     <center>
     <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
       <Paper sx={{ p: 4, width: 300 }}>
-        <Typography fontWeight={'bold'} variant="h6" align="center" gutterBottom>
-            Mirae Assesment
-        </Typography>
+        <img src={LogoMirae} alt="Logo" style={{ display: 'block', margin: '0 auto 20px', maxWidth: '100px' }} />
         <Typography variant="h5" gutterBottom>
             Login
         </Typography>

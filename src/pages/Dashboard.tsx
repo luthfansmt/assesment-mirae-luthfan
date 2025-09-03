@@ -28,11 +28,11 @@ export default function Dashboard() {
             <Grid size={{xs:12, sm:3}} pb={2}>
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.clients}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.clients.toLocaleString()}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>No. of Accounts</Typography>
                     </Box>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.revenue}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.revenue.toLocaleString()}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>Client Asset AUM</Typography>
                     </Box>
                 </Card>
@@ -40,15 +40,15 @@ export default function Dashboard() {
             <Grid size={{xs:12, sm:6}} pb={2}>
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.clients}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.clients.toLocaleString()}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>Loans</Typography>
                     </Box>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.revenue}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.growth}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>Growth</Typography>
                     </Box>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.growth}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.revenue.toLocaleString()}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>Revenue</Typography>
                     </Box>
                 </Card>
@@ -56,11 +56,11 @@ export default function Dashboard() {
             <Grid size={{xs:12, sm:3}} pb={2}>
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.branches}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.branches.toLocaleString()}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>Branches</Typography>
                     </Box>
                     <Box>
-                        <Typography textAlign={'center'} fontWeight={'bold'}>{data.summary.staff}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data.summary.staff.toLocaleString()}</Typography>
                         <Typography textAlign={'center'} fontSize={12}>Staff</Typography>
                     </Box>
                 </Card>

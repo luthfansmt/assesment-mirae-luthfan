@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
-            <Typography variant="h6" pl={3}>Company Dashboard</Typography>
+            <Typography variant="h6" className="title-header">Company Dashboard</Typography>
             <Box sx={{ flexGrow: 1 }} />
             <Button
               onClick={handleLogout}

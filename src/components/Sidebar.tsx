@@ -53,6 +53,7 @@ const Sidebar = () => {
           {/* Tombol menu untuk mobile */}
             <IconButton
             onClick={() => setMobileOpen(true)}
+            className="menu-button"
             sx={{
               position: "absolute",
               top: 10,
