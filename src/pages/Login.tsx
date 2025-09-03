@@ -22,27 +22,30 @@ export default function Login() {
     <center>
     <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
       <Paper sx={{ p: 4, width: 300 }}>
+        <Typography fontWeight={'bold'} variant="h6" align="center" gutterBottom>
+            Mirae Assesment
+        </Typography>
         <Typography variant="h5" gutterBottom>
-          Login
+            Login
         </Typography>
         <TextField 
-          label="Username" 
-          fullWidth 
-          margin="normal" 
-          value={username} 
-          onChange={(e) => setUsername(e.target.value)} 
+            label="Username" 
+            fullWidth 
+            margin="normal" 
+            value={username} 
+            onChange={(e) => setUsername(e.target.value)}
         />
         <TextField 
-          label="Password" 
-          type="password" 
-          fullWidth 
-          margin="normal"
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
+            label="Password" 
+            type="password" 
+            fullWidth 
+            margin="normal"
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}
         />
         {error && <Typography color="error">{error}</Typography>}
         <Button variant="contained" color="primary" fullWidth sx={{ mt: 2 }} onClick={handleLogin}>
-          Sign In
+            Sign In
         </Button>
       </Paper>
     </Box>

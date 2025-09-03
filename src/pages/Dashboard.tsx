@@ -28,40 +28,40 @@ export default function Dashboard() {
             <Grid size={{xs:12, sm:3}} pb={2}>
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
-                        <Typography>Clients</Typography>
-                        <Typography>{data?.summary.clients}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.clients}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>No. of Accounts</Typography>
                     </Box>
                     <Box>
-                        <Typography>Revenue</Typography>
-                        <Typography>{data?.summary.revenue}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.revenue}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>Client Asset AUM</Typography>
                     </Box>
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}} pb={2}>
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
-                        <Typography>Clients</Typography>
-                        <Typography>{data?.summary.clients}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.clients}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>Loans</Typography>
                     </Box>
                     <Box>
-                        <Typography>Revenue</Typography>
-                        <Typography>{data?.summary.revenue}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.revenue}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>Growth</Typography>
                     </Box>
                     <Box>
-                        <Typography>Growth</Typography>
-                        <Typography>{data?.summary.growth}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.growth}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>Revenue</Typography>
                     </Box>
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:3}} pb={2}>
                 <Card sx={{...styles.card, ...styles.space}}>
                     <Box>
-                        <Typography>Branches</Typography>
-                        <Typography>{data?.summary.branches}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data?.summary.branches}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>Branches</Typography>
                     </Box>
                     <Box>
-                        <Typography>Staff</Typography>
-                        <Typography>{data.summary.staff}</Typography>
+                        <Typography textAlign={'center'} fontWeight={'bold'}>{data.summary.staff}</Typography>
+                        <Typography textAlign={'center'} fontSize={12}>Staff</Typography>
                     </Box>
                 </Card>
             </Grid>
@@ -69,22 +69,22 @@ export default function Dashboard() {
         <Grid container spacing={2}>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="No. of Clients" data={data?.clients} type="bar" />
+                    <ChartCard title="No. of Clients" data={data?.clients} type="bar" category="client" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Loan" data={data.loans} type="stacked" />
+                    <ChartCard title="Loan" data={data.loans} type="stacked" category="loan" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Client Asset AUM" data={data.clientAssetsAum} type="bar" />
+                    <ChartCard title="Client Asset AUM" data={data.clientAssetsAum} type="bar" category="aum" />
                 </Card>
             </Grid>
             <Grid size={{xs:12, sm:6}}>
                 <Card sx={{...styles.card}}>
-                    <ChartCard title="Trading Value" data={data.tradingValue} type="bar" />
+                    <ChartCard title="Trading Value" data={data.tradingValue} type="bar" category="trading" />
                 </Card>
             </Grid>
         </Grid>
